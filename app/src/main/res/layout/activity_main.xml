@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.dxy.designsuppotlibrary.MainActivity">
+    android:orientation="vertical"
+   >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <Button
+        android:id="@+id/bt_floating_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="FloatingActionButton"
+        android:background="#00bbff"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+    android:id="@+id/bt_snack_bar_button"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="SnackBarButton"
+    android:background="#00bbff"
+    android:layout_margin="20dp"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    />
+
+    <Button
+        android:id="@+id/bt_Text_Input_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="TextInputLayout"
+        android:background="#00bbff"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
