@@ -1,12 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.dxy.designsuppotlibrary.CoordinatorLayoutActivity">
+    android:fitsSystemWindows="true"
+    >
 
-</RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/a"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"  />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高圆圆，中国女演员，1979年10月5日出生于北京市丰台区云岗一个普通的知识分子家庭。
+1996年高圆圆被广告公司发掘，随后拍摄了大量广告，成为了广告圈中的模特。1997年高圆圆出演了她的第一部电影《爱情麻辣烫》，从此开始了她的演员生涯。
+2001年高圆圆参演的电影《十七岁的单车》获得柏林国际电影节最佳影片银熊奖[1]  。2003年高圆圆首次尝试古装武侠剧，在《倚天屠龙记》电视剧中饰演峨眉派掌门周芷若。2005年主演的电影《青红》获得戛纳国际电影节评审团大奖，[2]  同年成为荷兰国际球根花卉中心中国首届百合小姐。2008年到2009年，拍摄电影《南京！南京！》，该片获圣塞巴斯蒂安国际电影节最佳电影金贝壳奖。2011年凭借电影《单身男女》获得香港电影金像奖最佳女主角提名。[3]  2012年主演陈凯歌导演的影片《搜索》。[4]  2013年高圆圆主演的电视剧《咱们结婚吧》在央视、湖南卫视黄金档播出。2014年主演的爱情电影《一生一世》票房突破两亿[5-6]  。电影《君子道》已定档期2015年国庆档[7]
+2014年6月5日，赵又廷和高圆圆在北京领证结婚；11月28日，赵又廷和高圆圆在台北举行婚礼[6]  。2016年参演杜琪峰导演的电影《三人行》。[8] "
+            android:textSize="20sp" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/btn_star"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+
+</android.support.design.widget.CoordinatorLayout>

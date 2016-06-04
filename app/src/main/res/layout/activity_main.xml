@@ -40,4 +40,16 @@
         android:gravity="center"
         android:textColor="#ffffff"
         />
+
+    <Button
+        android:id="@+id/bt_coordinator_layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="CoordinatorLayout"
+        android:background="#00bbff"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
 </LinearLayout>

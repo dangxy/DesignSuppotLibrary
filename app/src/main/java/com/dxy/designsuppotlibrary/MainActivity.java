@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     Button btSnackBarButton;
     @InjectView(R.id.bt_Text_Input_button)
     Button btTextInputButton;
+    @InjectView(R.id.bt_coordinator_layout_button)
+    Button btCoordinatorLayoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TextInputLayoutActivity.class);
 
+                startActivity(intent);
+            }
+        });
+        btCoordinatorLayoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),CoordinatorLayoutActivity.class);
                 startActivity(intent);
             }
         });
